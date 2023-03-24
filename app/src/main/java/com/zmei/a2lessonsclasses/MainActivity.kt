@@ -10,5 +10,12 @@ class MainActivity : AppCompatActivity() {
         bind = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(bind.root)
-    }
+        var user = User("Sergey", "00000", 23)
+        var user2 = User("Andrey", "11111", 33)
+
+        user.addAge(10)
+        user2.addAge(5)
+        user.printUserInfo()
+        user2.printUserInfo()
+        }
 }
